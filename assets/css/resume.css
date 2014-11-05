@@ -1,0 +1,95 @@
+#contact-information,
+.job
+    {
+    margin:2em 0 4em;
+    }
+
+#contact-information
+    {
+    text-align:center;
+    }
+
+.job h4 
+    {
+    margin:0;
+    }
+
+#contact-information ul,
+.job ul.skills 
+    {
+    margin:0;
+    padding:0;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    }
+    
+.job ul.skills li 
+    {
+    float:left;
+    margin:0.25em 0.5em 0.25em 0;
+    background-color:#e5e5e5;
+    padding:0 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size:0.8em;
+    }
+    
+.job-description {
+    margin:1em 0;
+    }
+    
+@media all and (max-width: 960px) 
+{
+    .time-frame 
+    {
+        font-style:italic;
+    }
+}    
+
+@media all and (min-width: 960px) 
+{
+    #contact-information ul
+    {
+        display:inline-block;
+    }
+    
+    #contact-information ul li
+    {
+        float:left;
+        margin:0;
+        padding:0 1em;
+        border-left:1px solid #e0e0e0;
+    }
+    
+    .job  
+    {
+        position:relative;
+    }
+    
+    .contact-method .label,
+    .time-frame 
+    {
+        width:14%;
+        padding-right:1em;
+        /*
+        float:left;
+        display:block;
+        */
+        position:absolute;
+        display:block;
+        top:0;
+        left:0;
+        text-align:right;
+    }
+    
+    .contact-method.data, 
+    .job-details
+    {
+        width:86%;
+        float:right;
+        display:block;
+        padding-right:14%;
+    }
+}
