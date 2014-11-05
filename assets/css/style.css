@@ -30,17 +30,10 @@ a img{ vertical-align:text-bottom; }
 /* http://paulirish.com/2012/box-sizing-border-box-ftw */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* http://nicolasgallagher.com/micro-clearfix-hack */
-.clearfix:before,
-.clearfix:after {
-    content: "";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @media (min-width: 1200px){
@@ -48,6 +41,7 @@ a img{ vertical-align:text-bottom; }
         width: 1060px;
     }
 }
+
 .subcontainer
 {
     padding:2em;
