@@ -108,121 +108,23 @@ p
     margin:0 0 2em;
 }
 
-/* Contact Form
+/* Portfolio
 ----------------------------------------------------------------------- */
-#slidecontact_wrap
-{
-    display:none;
-    background-color:#222;
-    color:#ddd;
-}
 
-#slidecontact_wrap a
-{
-    color:#ddd;
-}
-
-#slidecontact_wrap strong
-{
-    color:#fff;
-}
-
-#slidecontact_wrap h4
-{
-    color:#fff;
-    margin:0 0 0.8em;
-}
-
-#contact_form_status { display:none; margin:0 0 1em; padding:0.4em 0.8em; font-weight:bold; }
-#contact_form_status.error { background-color:#f4e0e0; color:#fe2f39; }
-#contact_form_status.success { background-color:#96c047; color:#000; }
-
-#slidecontact_wrap table td
-{
-    padding:0.25em 0;
-}
-
-#slidecontact_wrap input[type=button]
-{
-    border:0;
-    padding:0.5em 1em;
-    font-weight:bold;
-    color:#000;
-    text-shadow:0 1px 0 #fe7753;
-    
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    
-    background: #fe4029;
-    background: -moz-linear-gradient(top,  #fe4029 0%, #fe3038 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe4029), color-stop(100%,#fe3038));
-    background: -webkit-linear-gradient(top,  #fe4029 0%,#fe3038 100%);
-    background: -o-linear-gradient(top,  #fe4029 0%,#fe3038 100%);
-    background: -ms-linear-gradient(top,  #fe4029 0%,#fe3038 100%);
-    background: linear-gradient(to bottom,  #fe4029 0%,#fe3038 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe4029', endColorstr='#fe3038',GradientType=0 );
-}
-
-#slidecontact_wrap input[type=button]:hover
-{
-    color:#fff;
-    text-shadow:0 -1px 0 #98231b;
-}
-
-#slidecontact
-{
-    padding:1em 0;
-    margin-top:0 !important;
-}
-
-#contact_form
-{
-    position:relative;
-}
-
-#contact_form_blockui,
-#contact_form_blockui span
-{
-    position:absolute;
-    display:block;
-    width:100%;
-    height:100%;
-}
-#contact_form_blockui
-{
-    display:none; /* initially hidden */
-    background-image:url('/images/ui/semi_transparent_black.png');
-}
-#contact_form_blockui span
-{
-    background-image:url('/images/ui/ajax-loader.gif');
-    background-repeat:no-repeat;
-    background-position:center center;
-}
-
-#slidecontact form
+#portfolio
 {
     background-color:#000;
-    padding:1.5em;
+    color:#bbb;
 }
 
-#slidecontact table,
-#slidecontact textarea
+#portfolio #container
 {
-    width:100%;
-}
-
-#contact_other
-{
-    padding:1.5em;
+    background-color:#121212;
 }
 
 #container
 {
-    background-color:#fff;
-    border:1px solid #d4d4d4;
-    padding:1.5em;
+    padding:3em;
     padding-top:0;
     
     -webkit-border-radius: 3px;
@@ -357,18 +259,16 @@ footer #copyright
 /* Portfolio
 ----------------------------------------------------------------------- */
 .portfolio_item {
-    border-top:1px solid #d4d4d4;
-    margin-top:2em;
-    padding-top:2em;
+    border-top:1px solid #222;
+    margin-top:4em;
+    padding-top:4em;
 }
 
 .portfolio_item h3 {
     font-family: "Gotham Ssm A", Helvetica, Arial, Sans-Serif;
-    background-color:#303030;
     color:#fff;
     font-weight:bold;
     display:inline-block;
-    padding:0.15em 0.4em;
     margin:0 0 1em;
     letter-spacing:-0.05em;
 }
