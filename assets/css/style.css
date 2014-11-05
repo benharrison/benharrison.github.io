@@ -293,7 +293,7 @@ nav ul li a.selected, nav ul li a.selected:hover
 #logo {
     width:250px;
     height:26px;
-    background-image:url('/images/ui/logo.png');
+    background-image:url('/images/logo.png');
     background-repeat:no-repeat;
     background-position:center center;
     float:left;
