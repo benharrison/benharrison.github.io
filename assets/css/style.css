@@ -1,27 +1,4 @@
-﻿/* Font Resources
------------------------------------------------------------------------ */
-/*
-@font-face
-{
-    font-family: 'LeagueGothic';
-    src: url('/assets/fonts/leaguegothic/League_Gothic-webfont.eot');
-    src: local('?'), url('/assets/fonts/leaguegothic/League_Gothic-webfont.woff') format('woff'), url('/assets/fonts/leaguegothic/League_Gothic-webfont.ttf') format('truetype'), url('/assets/fonts/leaguegothic/League_Gothic-webfont.svg#webfontOTINA1xY') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
-@font-face {
-		font-family: 'Zurich';
-		src: url('/assets/fonts/zurich/zuriclightextracondensed.eot');
-		src: url('/assets/fonts/zurich/zuriclightextracondensed.eot?#iefix') format('embedded-opentype'),
-					url('/assets/fonts/zurich/zuriclightextracondensed.woff') format('woff'),
-					url('/assets/fonts/zurich/zuriclightextracondensed.ttf') format('truetype'),
-					url('/assets/fonts/zurich/zuriclightextracondensed.svg#zuriclightextracondensed') format('svg');
-		font-weight: normal;
-		font-style: normal;
-}
-
-/* Additional Reset Stuff
+﻿/* Additional Reset Stuff
 ----------------------------------------------------------------------- */
 
 /* http://stackoverflow.com/questions/273964/how-to-change-background-color-on-text-links-on-hover-but-not-image-links */
@@ -70,13 +47,11 @@ a:hover, a:hover strong
 
 h1
 {
-    font-family: 'Zurich', Arial, Sans-Serif;
-    text-transform: uppercase;
-    font-weight:normal;
+    font-family: "Gotham Ssm A", Helvetica, Arial, Sans-Serif;
     font-size:3em;
     line-height:0.8em;
     color:#fe2f39;
-    letter-spacing:-0.025em;
+    letter-spacing: -0.06em;
 }
 
 h1 a 
@@ -87,6 +62,7 @@ h1 a
 h2, h3, h4
 {
     font-family: "Gotham Ssm A", Helvetica, Arial, Sans-Serif;
+    letter-spacing: -0.06em;
     font-weight:bold;
     color:#222;
 }
@@ -191,7 +167,6 @@ h2#logo {
     float:left;
     margin:1em 0.5em;
     font-size: 3em;
-    letter-spacing: -0.06em;
 }
 
 h2#logo a{
