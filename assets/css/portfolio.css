@@ -46,3 +46,33 @@
     width:100%;
 }
 
+
+/* demo links
+----------------------------------------------------------------------- */
+a.demo-link
+{
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.5);
+    padding:0.5em 1em;
+    color:#fff !important;
+
+    margin: 1em 0 0 1.2em;
+    display: inline-block;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+a.demo-link:hover
+{
+    background-color:transparent;
+    border-color: rgba(255,255,255,1.0);
+}
+
+a.demo-link i
+{
+    margin-right:0.5em;
+}
+
