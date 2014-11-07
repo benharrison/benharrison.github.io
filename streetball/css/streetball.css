@@ -8,10 +8,28 @@
 * html .group             { zoom: 1; } /* IE6 */
 *:first-child+html .group { zoom: 1; } /* IE7 */
 
+
+/* typography
+------------------------------------------------------------------------------ */
+body
+{
+    font-family:"Gotham Narrow Ssm A", Helvetica, Arial, sans-serif;
+}
+
+input,
+#play_button,
+#player_charts .stat_chart,
+h1, h2, h3, h4
+{
+    font-family:"Gotham Ssm A", Helvetica, Arial, sans-serif;
+}
+
+
+/* html elements
+------------------------------------------------------------------------------ */
 body
 {
     background-color:#575757;
-    font-family:Helvetica, Arial, sans-serif;
     overflow-y: scroll;
 }
 
@@ -177,6 +195,7 @@ header h2
     padding:0.2em 0.4em;
     font-weight:bold;
     letter-spacing:-0.05em;
+    text-decoration: none;
     
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
