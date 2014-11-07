@@ -102,8 +102,7 @@ header
 nav
 {
     float:right;
-    margin-top:2.5em;
-    margin-right:0.8em;
+    margin-top:0.6em;
 }
 
 nav ul
@@ -125,9 +124,8 @@ nav ul li a, nav ul li a:visited
     height:100%;
     color:#bbb;
     text-decoration:none;
-    font-weight:bold;
-    font-size:18px;
-    padding:4px 8px;
+    font-size:1.2em;
+    padding:0 8px;
 }
 
 nav ul li a:hover
