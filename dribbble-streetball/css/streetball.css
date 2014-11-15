@@ -301,7 +301,7 @@ header h2
     position:absolute;
     padding:0.55em 0.75em;
     font-weight:bold;
-    text-shadow:0 -1px 0 #aa3864;
+    text-shadow:0 -1px 0 rgba(0,0,0,0.5);
 }
 #player_charts .label_one
 {
@@ -311,7 +311,7 @@ header h2
 {
     right:0;
     color:#000;
-    text-shadow:0 1px 0 #f4dae2;
+    text-shadow:0 1px 0 rgba(255,255,255,0.35);
 }
 
 #player_charts .chart_divider
