@@ -1,4 +1,4 @@
-﻿/* Additional Reset Stuff
+/* Additional Reset Stuff
 ----------------------------------------------------------------------- */
 
 /* http://stackoverflow.com/questions/273964/how-to-change-background-color-on-text-links-on-hover-but-not-image-links */
@@ -97,94 +97,6 @@ ul
     margin:0 0 2em;
 }
 
-/* header
------------------------------------------------------------------------ */
-
-header
-{
-    padding:2.5em 2em;
-}
-
-nav
-{
-    float:right;
-}
-
-nav ul
-{
-    list-style-image:none;
-    list-style-position:outside;
-    list-style-type:none;
-}
-
-nav ul li
-{
-    float:left;
-    margin:0;
-}
-
-nav ul li a, nav ul li a:visited
-{
-    display:block;
-    height:100%;
-    color:#bbb;
-    text-decoration:none;
-    font-size:1.2em;
-    padding:0 8px;
-
-    border:2px solid transparent;
-    padding:0.5em 1em;
-
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-
-nav ul li a:hover
-{
-    color:#000;
-    border-color:#444;
-    background-color:transparent;
-}
-
-nav ul li a.selected, nav ul li a.selected:hover
-{
-    color:#fff;
-    
-    background: #fe562f;
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlNTYyZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZTJmMzkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top,  #fe562f 0%, #fe2f39 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe562f), color-stop(100%,#fe2f39));
-    background: -webkit-linear-gradient(top,  #fe562f 0%,#fe2f39 100%);
-    background: -o-linear-gradient(top,  #fe562f 0%,#fe2f39 100%);
-    background: -ms-linear-gradient(top,  #fe562f 0%,#fe2f39 100%);
-    background: linear-gradient(to bottom,  #fe562f 0%,#fe2f39 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe562f', endColorstr='#fe2f39',GradientType=0 );
-    
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    
-    text-shadow:0 1px 0 #b12826;
-}
-
-
-/* Logo
------------------------------------------------------------------------ */
-h2#logo {
-    float:left;
-    margin:0;
-    font-size: 2.5em;
-}
-
-h2#logo a{
-    color:#303030;
-}
-
-h2#logo a:hover{
-    background-color:transparent;
-}
-
 
 /* footer
 ----------------------------------------------------------------------- */
@@ -243,15 +155,6 @@ footer {
         float:none;
         margin:1.8em auto;
         width:100%;
-    }
-    
-    nav {
-        float:none;
-        margin:2em auto;
-        width:250px;
-    }
-    nav ul li {
-        float:none;
     }
     
     #about_image
