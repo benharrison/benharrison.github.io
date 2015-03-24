@@ -112,7 +112,6 @@ footer {
 @media all and (min-width: 1060px) {
     footer
     {
-        width:1060px;
         margin:0.75em auto 0;
     }
     
