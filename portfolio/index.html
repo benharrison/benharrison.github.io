@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<section id="portfolio">
+    <div class="container">
+        <div class="subcontainer">
+
+            {% for post in site.categories.portfolio %}
+                <!-- {{ post.title }} -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>{{ post.title }}</h3>
+                            
+                        {{ post.content }}
+                        
+                    </div>
+                    <div class="col-md-8">
+                        <img src="{{ post.screenshot }}" alt="{{ post.title }}" />
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div><!-- /.subcontainer -->
+    </div><!-- /#container -->
+</section><!-- /#portfolio -->
