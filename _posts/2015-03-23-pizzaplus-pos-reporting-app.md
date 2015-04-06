@@ -2,7 +2,7 @@
 layout:     default
 categories: portfolio
 title:      Point of Sale Reporting Application
-screenshot: assets/images/portfolio/2009_Pizza_Plus_Webapp.jpg
+screenshot: /assets/images/portfolio/2009_Pizza_Plus_Webapp.jpg
 date:       2015-03-23 11:00:00
 author:     Ben Harrison
 ---

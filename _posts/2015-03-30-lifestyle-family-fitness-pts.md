@@ -2,7 +2,7 @@
 layout:     default
 categories: portfolio
 title:      Personal Trainer Scheduler
-screenshot: assets/images/portfolio/2011_LifestyleFamilyFitness-PersonalTrainerScheduler.jpg
+screenshot: /assets/images/portfolio/2011_LifestyleFamilyFitness-PersonalTrainerScheduler.jpg
 date:       2015-03-30 11:00:00
 author:     Ben Harrison
 ---

@@ -2,7 +2,7 @@
 layout:     default
 categories: portfolio
 title:      Calvary Chapel Southside
-screenshot: assets/images/portfolio/2013_CalvarySouthside_Projects_OnBlack.jpg
+screenshot: /assets/images/portfolio/2013_CalvarySouthside_Projects_OnBlack.jpg
 date:       2015-03-20 11:00:00
 author:     Ben Harrison
 ---

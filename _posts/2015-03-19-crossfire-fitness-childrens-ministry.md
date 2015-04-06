@@ -2,7 +2,7 @@
 layout:     default
 categories: portfolio
 title:      Crossfire Fitness Ministry
-screenshot: assets/images/portfolio/2013_CrossfireFit_ResponsiveWebsite_OnBlack.jpg
+screenshot: /assets/images/portfolio/2013_CrossfireFit_ResponsiveWebsite_OnBlack.jpg
 date:       2015-03-19 11:00:00
 author:     Ben Harrison
 ---

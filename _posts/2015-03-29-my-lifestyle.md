@@ -2,7 +2,7 @@
 layout:     default
 categories: portfolio
 title:      My Lifestyle
-screenshot: assets/images/portfolio/2011_LifestyleFamilyFitness-MyLifestyle.jpg
+screenshot: /assets/images/portfolio/2011_LifestyleFamilyFitness-MyLifestyle.jpg
 date:       2015-03-29 11:00:00
 author:     Ben Harrison
 ---

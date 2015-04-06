@@ -2,7 +2,7 @@
 layout:     default
 categories: portfolio
 title:      Dribbble Streetball
-screenshot: assets/images/portfolio/2012_Dribble-Streetball.jpg
+screenshot: /assets/images/portfolio/2012_Dribble-Streetball.jpg
 date:       2015-03-28 11:00:00
 author:     Ben Harrison
 ---

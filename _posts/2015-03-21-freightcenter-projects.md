@@ -2,7 +2,7 @@
 layout:     default
 categories: portfolio
 title:      FreightCenter Software Projects
-screenshot: assets/images/portfolio/2013_FreightCenter_Projects_OnBlack.jpg
+screenshot: /assets/images/portfolio/2013_FreightCenter_Projects_OnBlack.jpg
 date:       2015-03-21 11:00:00
 author:     Ben Harrison
 ---
