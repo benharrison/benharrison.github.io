@@ -65,7 +65,7 @@ h1 a
 
 h2, h3, h4
 {
-    font-family: "Gotham Ssm A", "Gotham SSm B", Helvetica, Arial, Sans-Serif;
+    font-family: "Proxima Nova", Helvetica, Arial, Sans-Serif;
     letter-spacing: -0.06em;
     font-weight:bold;
     color:#222;
@@ -79,7 +79,7 @@ h6
 
 body
 {
-    font-family:"Gotham Narrow Ssm A", "Gotham Narrow SSm B", Helvetica, Arial, Sans-Serif;
+    font-family:"Proxima Nova", Helvetica, Arial, Sans-Serif;
     line-height:1.6em;
     background-color:#dddddd;
     color:#555;
