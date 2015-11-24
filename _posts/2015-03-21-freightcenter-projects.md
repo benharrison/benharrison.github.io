@@ -21,7 +21,7 @@ I contributed design feedback and handled most of the implementation.
 * .NET C# - Web, Background, Internal Tools
 * MSSQL - Stored Procedures, Database Design
 * Services - WCF, REST, ASMX
-* Various Reports
+* Reporting Framework
 * ASP.NET - MVC4 &amp; Webforms for legacy apps
 * Bootstrap 2/3 Integration with Custom Design
 * JavaScript, jQuery, JSON, HTML, CSS
