@@ -7,8 +7,8 @@ date:       2015-03-20 11:00:00
 author:     Ben Harrison
 ---
 
-For my local Church, Calvary Chapel Southside in St Petersburg, FL, I volunteer to serve
-most of the web and technical needs. This includes a variety of roles such web design &amp; development, 
+For my local church, Calvary Chapel Southside in St Petersburg, FL, I volunteered to serve
+most of the web and technical needs. This includes a variety of roles such as web design &amp; development, 
 podcast recording &amp; publishing, graphic design, database management, networking, computer maintenance, et al.
 
 ######Technology

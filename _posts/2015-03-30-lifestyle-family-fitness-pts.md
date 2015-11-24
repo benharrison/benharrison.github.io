@@ -8,7 +8,7 @@ author:     Ben Harrison
 ---
 
 At Lifestyle Family Fitness I had the opportunity to help develop an in-house application for managing personal trainer schedules.
-I was responsible for user interface, front-end development, and consuming back-end WCF Services.
+I was responsible for user interface design, front-end development, and consuming back-end WCF Services.
 
 ######Technology
 
