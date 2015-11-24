@@ -44,6 +44,12 @@
 #portfolio img 
 {
     width:100%;
+    margin-bottom:1em;
+}
+
+#portfolio img:last-child
+{
+    width:100%;
 }
 
 

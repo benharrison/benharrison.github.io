@@ -3,7 +3,10 @@ layout: default
 title:  AutoBook Scheduler
 date:   2015-03-31 11:00:00
 categories: portfolio
-screenshot: /assets/images/portfolio/2010_AutoBook_Dashboard.jpg
+screenshot: 
+  - /assets/images/portfolio/2010_AutoBook_Dashboard.jpg
+  - /assets/images/portfolio/2010_AutoBook_Login.png
+  - /assets/images/portfolio/2010_AutoBook_UI_Elements.png
 author: Ben Harrison
 ---
 

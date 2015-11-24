@@ -16,7 +16,9 @@ layout: default
                         
                     </div>
                     <div class="col-md-8">
-                        <img src="{{ post.screenshot }}" alt="{{ post.title }}" />
+                        {% for item in post.screenshot %}
+                        <img src="{{ item }}" alt="{{ post.title }}" />
+                        {% endfor %}
                     </div>
                 </div>
             {% endfor %}
