@@ -15,9 +15,9 @@ podcast recording &amp; publishing, graphic design, database management, network
 
 * ASP.NET MVC
 * Rapid UI Implementation
-* Bootstrap 3, Resonsive Web
+* Bootstrap 3, Responsive Web
 * Caching and CDN Optimizations
-* RSS Parser
+* Custom RSS Parser
 * iTunes Podcast
 
 ######Typography

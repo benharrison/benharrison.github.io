@@ -10,10 +10,18 @@
                             
                         {{ post.content }}
                         
+                        {% if post.demolink %}
+                        <a href="{{ post.demolink }}" class="demo-link">
+                            <i class="fa fa-desktop"></i> View Demo
+                        </a>
+                        {% endif %}
+
                     </div>
                     <div class="col-md-8">
                         {% for item in post.screenshot %}
-                        <img src="{{ item }}" alt="{{ post.title }}" />
+                        <a class="portfolio-link" href="{% if post.demolink %}{{ post.demolink }}{% else %}{{ item }}{% endif %}">
+                            <img src="{{ item }}" alt="{{ post.title }}" />
+                        </a>
                         {% endfor %}
                     </div>
                 </div>

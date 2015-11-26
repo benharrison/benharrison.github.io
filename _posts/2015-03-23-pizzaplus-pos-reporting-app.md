@@ -3,6 +3,7 @@ layout:     default
 categories: portfolio
 title:      Point of Sale Reporting Application
 screenshot: /assets/images/portfolio/2009_Pizza_Plus_Webapp.jpg
+demolink:   /point-of-sale-reporting-demo
 date:       2015-03-23 11:00:00
 author:     Ben Harrison
 ---
@@ -22,6 +23,3 @@ provided real-time reports based on custom business logic.
 ######Typography
 
 Gotham, Web-safe fonts
-
-<a href="point-of-sale-reporting-demo" class="demo-link">
-<i class="fa fa-desktop"></i> View Demo</a>

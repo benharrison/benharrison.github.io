@@ -44,14 +44,18 @@
 #portfolio img 
 {
     width:100%;
+}
+
+#portfolio .portfolio-link
+{
+    display:block;
     margin-bottom:1em;
 }
 
-#portfolio img:last-child
+#portfolio .portfolio-link:hover
 {
-    width:100%;
+    background-color:transparent;
 }
-
 
 /* demo links
 ----------------------------------------------------------------------- */
