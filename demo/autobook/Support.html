@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AutoBook</title>
+        
+        <link rel="stylesheet" type="text/css" media="all" href="css/style.css" /> <!-- stylesheet -->
+        
+        <link rel="stylesheet" type="text/css" media="all" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/themes/ui-lightness/jquery-ui.css" />
+        
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,bold&subset=latin' rel='stylesheet' type='text/css'>
+        
+        <style type="text/css">
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container_24">
+                <div class="grid_24">
+                    <div id="logo">
+                        <a href="#">
+                            <span>
+                                <img src="autobook_bw.png">
+                                AutoBook
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+            
+        <div id="navigation">
+            <div class="container_24">
+                <div class="grid_21">
+                    <ul>
+                        <li><a id="navDashboard" href="#"><strong>Dashboard</strong></a></li>
+                        <li><a id="navAppt" href="#"><strong>Appointments</strong></a></li>
+                        <li><a id="navNextAppt" href="#"><strong>Next Appointments</strong></a></li>
+                        <li><a id="navCustomers" href="#"><strong>Customers</strong></a></li>
+                        <li><a id="navCustomersAdd" href="#"><strong>+</strong></a></li>
+                        <li><div style="padding:3px 0 0 5px;"><img src="SearchPreview.png" style="width:200px;" /></div></li>
+                    </ul>
+                </div>
+                <div class="grid_3">
+                    <a id="settingsLink" href="Settings.html"><strong>Settings</strong></a>
+                    <a id="supportHelpLink" href="Support.html"><strong>Support</strong></a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+        <div id="main">
+            <div id="main_header"></div>
+            <div id="main_content">
+                <div class="container_24">
+                    <div class="pagePadding">
+                        <div class="grid_22 prefix_1 suffix_1">
+                            <h1>Contact AutoLoop Support</h1>
+
+                            <p>Please fill out the below form with as much detail as possible. The more information that you can include about the concern you have, the quicker we will be able to help resolve the matter and get back to you. Thank you.</p>
+
+                            <p>If this is a Support Emergency, please call us at: <strong>1 (877) 850-2010</strong>.</p>
+                        </div>
+                        <div class="clear"></div>
+                        
+                        <div class="grid_18 prefix_3 suffix_3">
+
+                            <div class="subcontainer">
+                                <table class="verttop">
+                                    <tr>
+                                        <td style="width:220px;"><strong>Your Name:</strong></td>
+                                        <td><input style="width:200px;" type="text"></input></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Your Email Address:</strong></td>
+                                        <td><input style="width:200px;" type="text"></input></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Your Phone Number:</td>
+                                        <td>
+                                            <input style="width:200px;" type="text"></input>
+                                            <em style="padding-left:10px;">ex: (555) 555-5555</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Priority:</td>
+                                        <td>
+                                            <select style="width:90px;">
+                                                <option>Low</option>
+                                                <option>Medium</option>
+                                                <option>High</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Describe Your Issue/Question:</strong>
+                                        </td>
+                                        <td>
+                                            <textarea class="txtIssue" style="width:440px; height:100px;"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Additional Details:</strong>
+                                        </td>
+                                        <td>
+                                            <textarea class="txtAdditional" style="width:440px; height:100px;"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Attachments:<br>
+                                            <em>(Up to 4 MB Total)</em>
+                                        </td>
+                                        <td>
+                                            <input type="file"></input>
+                                        </td>
+                                    </tr>
+                                    
+                                </table>
+                            </div> <!-- .subcontainer -->
+                            
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="main_footer"></div>
+        </div>
+            
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+        
+        <script type="text/javascript" src="js/lib/raphael-1.5.2.min.js"></script>
+        
+        <script type="text/javascript" src="js/supportPage.js"></script>
+        
+    </body>
+</html>

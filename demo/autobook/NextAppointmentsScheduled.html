@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Appointments Created Summary</title>
+        
+        <link rel="stylesheet" type="text/css" media="all" href="reset.css" /> <!-- reset -->
+        <link rel="stylesheet" type="text/css" media="all" href="text.css" /> <!-- text -->
+        <link rel="stylesheet" type="text/css" media="all" href="960_24_col.css" /> <!-- 960 -->
+        
+        <style type="text/css">
+            .alignRight {
+                text-align:right;
+                }
+                
+            .alignLeft {
+                text-align:left !important;
+                }
+                
+            .strong {
+                font-weight:bold;
+                }
+                
+            .grayText {
+                color:#666;
+                }
+                
+            body {
+                padding-top:30px;
+                }
+                
+            h1 {
+                font-size:2.4em;
+                margin:0;
+                }
+                
+            hr {
+                margin-bottom:30px;
+                }
+                
+            #reportData strong {
+                font-size:1.2em;
+                }
+                
+            #reportData .grayText {
+                font-style:italic;
+                font-family:Georgia, Serif;
+                font-size:0.9em;
+                }
+                
+            table {
+                width:100%;
+                text-align:right;
+                font-size:1.2em;
+                }
+                
+            table.blank {
+                font-size:1em;
+                }
+                
+            table td {
+                border:1px solid #bbb;
+                padding:1px 6px;
+                }
+                
+            table td.noborder {
+                border-left:0;
+                border-right:0;
+                }
+                
+            table tr.header td {
+                background-color:#c9c9c9;
+                font-weight:bold;
+                text-shadow: 0 1px 0 #fff;
+                text-align:center;
+                background-image:url("tableHeaders.gif");
+                background-repeat:repeat-x;
+                }
+                
+            table tr.highlight1 td {
+                background-color:#ffffe5;
+                }
+                
+            table tr.highlight2 td {
+                background-color:#ffff99;
+                }
+        </style>
+    </head>
+
+    <body>
+        <div class="container_24">
+            <!-- Title -->
+            <div class="grid_17">
+                <h1>Summary of Appointments Created</h1>
+                <h2>Anderson Autos</h2>
+            </div>
+            <div class="grid_7 alignRight" style="padding-top:6px;">
+                <div id="reportData">
+                    <strong>March 2010 - April 2010</strong>
+                    <br />
+                    <span class="grayText">Generated: 5/14/2010 2:30 PM</span>
+                </div>
+            </div>
+            <div class="clear"></div>
+            
+            <hr />
+            
+            <!-- Chart -->
+            <div class="grid_9">
+                <img src="http://chart.apis.google.com/chart?cht=p&chs=320x200&chl=Online|Advisor|Coordinator&chd=t:100,27,15&chco=ad2a00|fbb70a|163a76" />
+            </div>
+            
+            <!-- Tabular Data -->
+            <div class="grid_15">
+                <table class="blank">
+                    <tr>
+                        <td style="width:60%;">
+                            <table>
+                                <!-- Online -->
+                                <tr class="header">
+                                    <td>Scheduled Appointments</td>
+                                    <td style="width:20%">Online</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="alignLeft">Website Visitors</td>
+                                    <td>100</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width:40%;"></td>
+                    </tr>
+            
+            
+                <table>
+                    <!-- Advisors -->
+                    <tr class="header">
+                        <td>Advisor Details</td> <td>Total</td>
+                    </tr>
+                    <tr>
+                        <td class="alignLeft">Jim</td> <td>2</td> <td>2</td> <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="alignLeft">Brenda</td> <td>3</td> <td>0</td> <td>3</td>
+                    </tr>
+                    <tr>
+                        <td class="alignLeft">Greg</td> <td>4</td> <td>3</td> <td>1</td>
+                    </tr>
+                    <tr>
+                        <td class="alignLeft">Edward</td> <td>5</td> <td>5</td> <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="alignLeft">Adam</td> <td>6</td> <td>0</td> <td>6</td>
+                    </tr>
+                    <tr>
+                        <td class="alignLeft">Lloyd</td> <td>7</td> <td>3</td> <td>4</td>
+                    </tr>
+                    <tr class="strong highlight1">
+                        <td class="alignLeft">Sub Total</td> <td>27</td> <td>13</td> <td>14</td>
+                    </tr>
+                    <tr><td class="noborder" colspan="4">&nbsp;</td></tr>
+                    
+                    <!-- Coordinators -->
+                    <tr class="center header">
+                        <td>Coordinator Details</td> <td>Total</td> <td>DMS</td> <td>Scheduler</td>
+                    </tr>
+                    <tr>
+                        <td class="alignLeft">Shannon</td> <td>4</td> <td>3</td> <td>1</td>
+                    </tr>
+                    <tr>
+                        <td class="alignLeft">Daniel</td> <td>5</td> <td>5</td> <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="alignLeft">Karen</td> <td>6</td> <td>0</td> <td>6</td>
+                    </tr>
+                    <tr class="strong highlight1">
+                        <td class="alignLeft">Sub Total</td> <td>15</td> <td>8</td> <td>7</td>
+                    </tr>
+                    <tr><td class="noborder" colspan="4">&nbsp;</td></tr>
+                    
+                    <tr class="strong highlight2">
+                        <td class="alignLeft">Total</td> <td>142</td> <td>21</td> <td>21</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="clear"></div>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+.displayPanel {
+    display:none;
+    }
+    
+.grayText {
+    color:#666;
+    }
+    
+.subIndent {
+    padding: 10px 0 0 20px;
+    }
+    
+.timeBlock {
+    display:block;
+    background-color:#f5f5f5;
+    padding:2px 4px;
+    border:1px solid #ddd;
+    font-weight:bold;
+    text-align:center;
+    margin:0 2px;
+    }
+    .timeBlock.highlight {
+        background-color: #fffde1;
+        }
+    
+.timeHours {
+    display:block;
+    text-align:center;
+    color:#999;
+    }
+    .timeHours.highlight {
+        color:#000;
+        }
+    
+.subcontainer {
+    background-color:#f0f6fb;
+    padding:12px;
+    border:1px solid #ccc;
+    margin-left:35px;
+    }
+    
+.toggleSwitch {
+    width:35px;
+    height:15px;
+    padding:2px;
+    margin:0;
+    background-image:url("../images/toggleSwitch.png");
+    font-size:0;
+    line-height:0;
+    float:left;
+    margin-right:10px;
+    }
+    
+.toggleSwitch a, .toggleSwitch a.toggleSwitchOn {
+    display:block;
+    width:35px;
+    height:15px;
+    margin:0;
+    background-image:url("../images/toggleSwitch.png");
+    background-position:0 -19px;
+    outline:0 !important;
+    }
+    .toggleSwitch a.toggleSwitchOff {
+        background-position:-25px -19px;
+        }
+    
+.textCenter { text-align:center; }
+    
+.pagePadding {
+    padding:20px 0 40px;
+    }
+    
+.goldenLong, .goldenShort {
+    float:left;
+    }
+    
+    .goldenLong {
+    width:61.8%
+    }
+    
+    .goldenShort {
+    width:38.2%
+    }

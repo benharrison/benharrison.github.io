@@ -24,3 +24,6 @@ from their Facebook photos.
 
 ######Typography
 Tungsten, League Gothic
+
+######Project Date
+Fall 2013

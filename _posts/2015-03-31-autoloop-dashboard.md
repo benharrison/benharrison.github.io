@@ -1,13 +1,14 @@
 ---
-layout: default
-title:  AutoBook Scheduler
-date:   2015-03-31 11:00:00
+layout:     default
+title:      AutoBook Scheduler
+date:       2015-03-31 11:00:00
 categories: portfolio
 screenshot: 
   - /assets/images/portfolio/2010_AutoBook_Dashboard.jpg
   - /assets/images/portfolio/2010_AutoBook_Login.png
   - /assets/images/portfolio/2010_AutoBook_UI_Elements.png
-author: Ben Harrison
+demolink:   /demo/autobook/settings.html
+author:     Ben Harrison
 ---
 
 AutoBook is a tool, for the automotive industry, used for scheduling service appointments.
@@ -25,3 +26,6 @@ front-end development, and assisting with the back-end development of web servic
 ######Typography
 
 Gotham, Droid Sans
+
+######Project Date
+2010

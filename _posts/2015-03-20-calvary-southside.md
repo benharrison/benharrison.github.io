@@ -23,3 +23,6 @@ podcast recording &amp; publishing, graphic design, database management, network
 ######Typography
 
 Proxima Nova, Tungsten
+
+######Project Date
+Summer 2014

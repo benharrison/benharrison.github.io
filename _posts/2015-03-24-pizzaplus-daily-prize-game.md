@@ -3,7 +3,7 @@ layout:     default
 categories: portfolio
 title:      Daily Prize Game
 screenshot: /assets/images/portfolio/2008_Pizza_Plus_Prize_Game.png
-demolink:   /pizza-plus-prize-game
+demolink:   /demo/pizza-plus-prize-game
 date:       2015-03-24 11:00:00
 author:     Ben Harrison
 ---
@@ -27,3 +27,5 @@ modified.
 
 Futura
 
+######Project Date
+Spring 2008

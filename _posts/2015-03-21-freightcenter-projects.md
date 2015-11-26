@@ -25,3 +25,6 @@ I contributed design feedback and handled most of the implementation.
 * ASP.NET - MVC4 &amp; Webforms for legacy apps
 * Bootstrap 2/3 Integration with Custom Design
 * JavaScript, jQuery, JSON, HTML, CSS
+
+######Project Date
+2012-2013

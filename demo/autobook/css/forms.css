@@ -1,0 +1,18 @@
+input[type=text],
+select {
+    box-sizing: border-box;
+    border:1px solid #bbb;
+    padding:4px;
+    }
+    
+input[type=text]:hover,
+select:hover {
+    border-color:#999;
+    }
+    
+input[type=text]:active,
+input[type=text]:focus,
+select:active, 
+select:focus {
+    border-color:#000;
+    }
