@@ -66,13 +66,15 @@ a.demo-link
     border-color: rgba(255,255,255,0.5);
     padding:0.5em 1em;
     color:#fff !important;
-
-    margin: 1em 0 0 1.2em;
-    display: inline-block;
+    text-align:center;
 
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    
+    /* mobile defaults */
+    margin: 0 auto 2em;
+    display: block;
 }
 
 a.demo-link:hover

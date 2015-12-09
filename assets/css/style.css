@@ -169,6 +169,13 @@ footer #footer-external-links a
         width:75%;
         padding-right:2em;
     }
+    
+    a.demo-link
+    {
+        margin: 1em 0 0 1.2em;
+        display: inline-block !important;
+    }
+
 }
 
 @media all and (max-width: 991px) and (min-width: 620px) {
