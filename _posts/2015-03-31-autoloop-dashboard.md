@@ -7,7 +7,7 @@ screenshot:
   - /assets/images/portfolio/2010_AutoBook_Dashboard.jpg
   - /assets/images/portfolio/2010_AutoBook_Login.png
   - /assets/images/portfolio/2010_AutoBook_UI_Elements.png
-demolink:   /demo/autobook/settings.html
+demolink:   /demo/autobook/SignIn.html
 author:     Ben Harrison
 ---
 

@@ -19,7 +19,7 @@
                     </div>
                     <div class="col-md-8">
                         {% for item in post.screenshot %}
-                        <a class="portfolio-link" href="{% if post.demolink %}{{ post.demolink }}{% else %}{{ item }}{% endif %}">
+                        <a class="portfolio-link" href="{{ item }}">
                             <img src="{{ item }}" alt="{{ post.title }}" />
                         </a>
                         {% endfor %}
