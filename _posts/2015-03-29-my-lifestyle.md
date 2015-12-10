@@ -14,6 +14,16 @@ As an ongoing side project I created design comps to explore new ideas.
 This included aggregating pre-existing data from blogs, social media, and personal training videos, 
 and bringing them all together in one cohesive, on-brand, package.
 
+######Technologies
+
+* jQuery & jQuery Mobile
+* PhoneGap
+* AngularJS
+* MustacheJS
+* RequireJS
+* FlowPlayer
+* WordPress
+
 ######Typography
 Futura, Tungsten
 

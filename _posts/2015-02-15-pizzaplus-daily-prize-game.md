@@ -4,7 +4,7 @@ categories: portfolio
 title:      Daily Prize Game
 screenshot: /assets/images/portfolio/2008_Pizza_Plus_Prize_Game.png
 demolink:   /demo/pizza-plus-prize-game
-date:       2015-03-24 11:00:00
+date:       2015-02-15 11:00:00
 author:     Ben Harrison
 ---
 

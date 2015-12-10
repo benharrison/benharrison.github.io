@@ -3,7 +3,7 @@ layout:     default
 categories: portfolio
 title:      Pizza Plus Public Web Site
 screenshot: /assets/images/portfolio/2009_Pizza_Plus_Redesign.jpg
-date:       2015-03-25 11:00:00
+date:       2015-02-20 11:00:00
 author:     Ben Harrison
 ---
 
