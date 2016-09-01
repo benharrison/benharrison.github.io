@@ -1,0 +1,441 @@
+/* 
+====================================*/
+html, body{
+	height:100%;
+}
+body{
+	background-color:#fff;
+}
+h2, h3, h4 {
+	font-family: "Gotham Ssm A", "Gotham Ssm B", Arial, Sans-Serif;
+	font-weight:bold;
+}
+h3{
+	margin-bottom:6px;
+}
+.right{
+	text-align:right;
+}
+.nomargin{
+	margin:0;
+}
+h4{
+	font-weight:normal;
+}
+a{
+	color:#3445df;
+}
+a:hover{
+	color:#202faf;
+}
+#titlelinks{
+	color:#D1D4DA;
+	font-size:10px;
+	margin:0;
+	padding:0;
+	height:15px;
+    position:relative;
+}
+#titlelinks b{
+	color:#fff;
+}
+#titlelinks a{
+	font-size:10px;
+	color:#8db8e8;
+	text-decoration:underline;
+	margin:0;
+	padding:0;
+}
+#titlelinks a:hover{
+	color:#fff;
+}
+.warning, .exclamation {
+	background-repeat:no-repeat;
+	width:720px;
+	padding:3px;
+	padding-left:25px;
+	margin-bottom:8px;
+}
+.warning{
+	background-color:#f23522;
+	border:1px solid #750000;
+	color: #fff;
+	background-image:url('../images/cross_circle_frame.gif');
+}
+.exclamation{
+	background-color:#ffd457;
+	border:1px solid #cba025;
+	color: #000;
+	background-image:url('../images/exclamation_frame.gif');
+}
+.exclamation h2, .exclamation h3{
+	color: #403516;
+}
+.warning h2, .exclamation h2, .warning h3, .exclamation h3{
+	margin-bottom:0;
+}
+.warning a{
+	color:yellow;
+}
+.graybg{
+	background-color:#ededed;
+	padding:8px;
+	margin-right:10px;
+}
+.clearfooter{
+	clear:both;
+	height:115px;
+}
+#wrapper{
+	min-height: 100%;
+	margin-bottom: -115px;
+}
+#topheader{
+    background-color:#222;
+    color:#fff;
+    padding:2px 0;
+}
+#header{
+	color:#fff;
+	background-image:url('../images/header.gif');
+	background-repeat:repeat-x;
+	background-color:#1c3490;
+	padding-bottom:5px;
+}
+#version{
+	color:#659ad4;
+}
+#title h2{
+	margin-top:10px;
+}
+#title h2 a{
+	color:#fff;
+	text-decoration:none;
+}
+#statusinfo{
+	color: #d1d4da;
+	text-align:right;
+	font-size:10px;
+	padding-top:3px;
+}
+#statusinfo b{
+	color: #fff;
+}
+
+#navigation{
+	color:#fff;
+	background-color:#192546;
+}
+#navigation ul{ /* turn off bullets in list style & set 0 margins and padding */
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+#navigation ul li{
+	float:left;
+	padding:3px;
+	padding-left:0;
+	padding-bottom:0;
+}
+#navigation ul li a{
+	color:#fff;
+	text-decoration:none;
+	display:block;
+	padding: 2px;
+	padding-bottom:4px;
+	padding-left: 6px;
+	padding-right: 6px;
+	text-align:center;
+}
+#navigation ul li a:hover{
+	background-color:#344b9b;
+}
+#navigation ul li a.current, #navigation ul li a:hover.current{
+	font-weight:bold;
+	background-color:#fff;
+	color:#000;
+	/* background-color:#f23522; */
+}
+
+#body{
+	padding-top:10px;
+}
+
+#footer{
+	margin-top:15px;
+	color:#555;
+	height:100px;
+	background-color:#e5e5e5;
+}
+/* Time Clock
+==================================*/
+ul#timeclock{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+ul#timeclock li{
+	border:1px solid #e5e5e5;
+	padding:2px;
+	margin-top:3px;
+	color:#666666;
+	background-color:#ededed;
+}
+ul#timeclock li ol li{
+	background-color:#e0e0e0;
+	border:1px solid #d3d3d3;
+	padding-left:12px;
+}
+ul#timeclock li.timeclocksummary{
+	color:#000;
+	background-color:#afd0f3;
+	border:1px solid #a8cbf0;
+	padding:8px;
+	background-image:url('../images/blue_gradient_short.gif');
+	background-repeat:repeat-x;
+}
+ul#timeclock li.onclock{
+	background-image:url('../images/yellow_gradient.gif');
+	background-repeat:repeat-x;
+	background-color:#fff799;
+	color:#000;
+	border-color:#eee100;
+}
+ul#timeclock li span.position{
+	font-family:"Lucida Console", "Courier New", Courier, monospace;
+}
+
+li.onclock span.name{
+	font-weight:bold;
+}
+
+ol.timeclocksub{
+	margin-left:15px;
+}
+ul#timeclock li.onclock ol li{
+	background-color:#fffabd;
+	color:#000;
+	border-color:#eee100;
+}
+ul#timeclock li.onclock ol li i{
+	color:#737155;
+}
+
+ul#timeclock li ol li.futureclockout{
+	background-color:#ff5d4d;
+	color:#000;
+	border-color:#e20000;
+	background-image:url('../images/red_gradient.gif');
+}
+
+/* Daily Sales (Order Details)
+==================================*/
+ul#orders{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+ul#orders li{
+	border:1px solid #e5e5e5;
+	padding:6px;
+	padding-bottom:10px;
+	margin-top:3px;
+	color:#000;
+	background-color:#fff;
+}
+ul#orders li ol li{
+	background-color:#fff;
+	border:1px solid #d3d3d3;
+	margin-left:40px;
+	padding:2px;
+	padding-left:12px;
+}
+li.order span.order_number, li.order span.customer_name{
+}
+li.order span.customer_name{
+	font-weight:bold;
+	font-size:1.2em;
+}
+ul#orders li.nopay{
+	border:1px solid #e0e0e0;
+	padding:2px;
+	margin-top:3px;
+	color:#666666;
+	background-color:#ededed;
+}
+ul#orders li.nopay ol li{
+	color:#666666;
+	background-color:#e5e5e5;
+	border:1px solid #d3d3d3;
+	padding-left:12px;
+}
+ul#orders li.nopay table table tr.alt{
+	background-color: #dbdbdb;
+}
+ul#orders li table table{
+	background-color: #f3f3f3;
+	font-family:"Lucida Console", "Courier New", Courier, monospace;
+}
+ul#orders li table table tr.alt{
+	background-color: #e9e9e9;
+}
+
+/* Green - For paid orders */
+ul#orders li.green{
+	background-color:#aad967;
+}
+ul#orders li.green table table{
+	background-color:#a5d374;
+}
+ul#orders li.green table table tr.alt{
+	background-color:#acdd7f;
+}
+
+/* Dark Green - For deliveries */
+ul#orders li.darkgreen{
+	background-color:#6db23d;
+}
+ul#orders li.darkgreen table table{
+	background-color:#67a446;
+}
+ul#orders li.darkgreen table table tr.alt{
+	background-color:#77b858;
+}
+
+/* Yellow - For charge orders */
+ul#orders li.yellow{
+	background-color:#fff57f;
+}
+ul#orders li.yellow table table{
+	background-color:#efe770;
+}
+ul#orders li.yellow table table tr.alt{
+	background-color:#fffbb8;
+}
+
+
+/* Weekly Graph
+==================================*/
+#graph_wrapper{
+	position:relative;
+	width:433px;
+	height:230px;
+	background-image:url('../images/pizza_plus_chart_background.gif');
+	background-repeat:no-repeat;
+	padding-left:0px;
+	padding-top:5px;
+	margin-top:3px;
+}
+#graph_info{
+	height:25px;
+	padding-left:8px;	
+}
+#graph {
+	position: absolute;
+	height:200px;
+	width:428px;
+}
+#graph ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+#graph ul li{
+	float:left;
+	margin-right:2px;
+	width:58px;
+	z-index:1;
+	font-size:10px;
+}
+#graph ul li.anotherday{
+	background-color:#aad967;
+	background-image:url('../images/green_gradient.gif');
+	background-repeat:repeat-x;
+	background-position:bottom;
+}
+#graph ul li.nosales{
+	background-color:#f2f2f2;
+	background-image:none;
+}
+#graph ul li:hover.nosales{
+	background-color:#f2f2f2;
+}
+#graph ul li.nosales a{
+	color:#a9a9a9;
+}
+#graph ul li.nosales a:hover{
+	color:#919191;
+}
+#graph ul li.today{
+	background-color:#74b539;
+}
+#graph ul li.today a{
+  color:#fff;
+  font-weight:bold;
+}
+#graph li a{
+	display:block;
+	height:100%;
+	z-index:1;
+	text-decoration:none;
+	color:#2d4811;
+	text-align:center;
+}
+#graph li span{
+	position:absolute;
+	font-size:10px;
+	top:200px;
+	width:150px;
+	background-color:white;
+	margin:0;
+	padding:4px;
+	border:1px solid #999;
+	z-index:2;
+	display:none;
+}
+font.light{
+	color:#4c4c4c;
+}
+
+/*
+====================================*/
+tr.header{
+	font-size:10px;
+}
+.center{
+	text-align:center;
+}
+
+/* Calendar
+====================================*/
+#ui-datepicker-div{
+	display:none;
+}
+div#calendar{
+	position:absolute;
+	width:100%;
+	z-index:2;
+	display:none;
+}
+div#c2{
+	width:760px;
+	margin:0 auto 0 auto;
+}
+div#c3{
+	width:232px;
+	padding-right:10px;
+	margin-left:514px;
+	padding-left:4px;
+	padding-bottom:4px;
+	background-color:#fff;
+}
+.ui-datepicker{
+	background-color:yellow;
+}
+.ui-datepicker-close{
+	background-color:red;
+	width:20px;
+	height:20px;
+}
+
+
