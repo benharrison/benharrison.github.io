@@ -555,23 +555,6 @@ Some of that included word mark logos and background graphics for on-screen musi
     <script src="../assets/js/jquery.maphilight.min.js"></script>
 
     <script>
-        window.CenterPortfolioWrapperVertically = function(){
-            var $wrapper = $('#portfolio-wrapper');
-            var height = $wrapper.outerHeight();
-            var windowHeight = $(window).height();
-
-            if (windowHeight > height)
-            {
-                var difference = windowHeight - height;
-                var margin = difference / 2;
-                $wrapper.css('margin-top', margin + 'px');
-            }
-            else
-            {
-                $wrapper.css('margin-top', '');
-            }
-        };
-
         $(document).ready(function(){
 
             $('#portfolio-map').maphilight({
@@ -589,11 +572,6 @@ Some of that included word mark logos and background graphics for on-screen musi
                         }
                     }
                 }
-            });
-
-            CenterPortfolioWrapperVertically();
-            $(window).resize(function(){
-                CenterPortfolioWrapperVertically();
             });
 
             swfobject.embedSWF("preloader.swf", "plusgame", "490", "500", "9.0.0");
