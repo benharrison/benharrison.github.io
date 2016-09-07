@@ -2,22 +2,22 @@
 <html ng-app="passwordGeneratorGui">
     <head>
     </head>
-    <body ng-controller="PasswordGeneratorGuiController as passwords">
+    <body ng-controller="PasswordGeneratorGuiController as ctrl">
         <ol>
-            <li ng-repeat="password in passwords.passwordList">{{password}}</li>
+            <li ng-repeat="password in ctrl.passwordList">{{password}}</li>
         </ol>
 
         <ul>
-            <li ng-repeat="(key, value) in passwords.options">
-                <label ng-switch="passwords.getTypeOf(value)">
+            <li ng-repeat="(key, value) in ctrl.options">
+                <label ng-switch="ctrl.getTypeOf(value)">
                     <span ng-switch-when="boolean">
-                        <input type="checkbox" ng-model="passwords.options[key]">
+                        <input type="checkbox" ng-model="ctrl.options[key]">
                     </span>
                     <span ng-switch-when="number">
-                        <input type="number" ng-model="passwords.options[key]">
+                        <input type="number" ng-model="ctrl.options[key]">
                     </span>
                     <span ng-switch-default>
-                        <input type="text" ng-model="passwords.options[key]">
+                        <input type="text" ng-model="ctrl.options[key]">
                     </span>
                     {{ key }} {{ value }}
                 </label>
@@ -34,14 +34,14 @@
                 var listSize = 10;
                 var intervalSeconds = 1;
 
-                var passwords = this;
-                passwords.passwordList = [];
+                var ctrl = this;
+                ctrl.passwordList = [];
 
-                passwords.getTypeOf = function(value) {
+                ctrl.getTypeOf = function(value) {
                     return typeof(value);
                 };
 
-                passwords.options = {
+                ctrl.options = {
                     length: 20,
                     uppercase: false,
                     lowercase: true,
@@ -52,10 +52,10 @@
                 };
 
                 var generatePassword = function() {
-                    $log.log(passwords.options);
-                    var password = PasswordGenerator.Generate(passwords.options);
-                    passwords.passwordList.unshift(password);
-                    passwords.passwordList.splice(listSize, 1);
+                    $log.log(ctrl.options);
+                    var password = PasswordGenerator.Generate(ctrl.options);
+                    ctrl.passwordList.unshift(password);
+                    ctrl.passwordList.splice(listSize, 1);
                 }
 
                 for (var i = 0; i < listSize; i++)
