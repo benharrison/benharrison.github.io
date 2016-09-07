@@ -13,11 +13,13 @@ a,
 a:visited,
 a:focus {
     color:#aaa;
+    text-decoration:none;
 }
 
 a:hover,
 a:active {
     color:#31a2f1;
+    text-decoration:underline;
 }
 
 a:active {
