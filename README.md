@@ -1,5 +1,10 @@
 #BenHarrison.cc
 
+##Setup
+
+npm install --global gulp-cli
+npm install
+
 ###Change Log
 
 **09-01-2016**

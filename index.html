@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <title>Ben Harrison - Software Engineer / User Interface Designer. Bristol, VA</title>
-    
+
     <meta name="robots" content="index, follow" />
     <meta name="description" content="Software Engineer / User Interface Designer. Bristol, VA." />
     <meta name="author" content="Ben Harrison" />
     <meta name="copyright" content="Copyright 2008-2015" />
-    
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="favicon.png" />
-    
+
     <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -21,7 +21,7 @@
     <link href="assets/css/home.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div id="home-wrapper">
+    <div id="home-wrapper" style="opacity:0">
 
         <h1>Ben Harrison</h1>
 
@@ -44,8 +44,13 @@
             <li><a href="tel:1-276-469-2027">
                 (276) 469-2027</a></li>
         </ul>
-        
+
     </div>
+
+    <script src="assets/js/velocity-1.2.3.min.js"></script>
+    <script>
+        Velocity(document.getElementById('home-wrapper'), { opacity: 1.0 }, 400);
+    </script>
 
     <script>
         var _gaq=[['_setAccount','UA-6320980-1'],['_trackPageview']];
