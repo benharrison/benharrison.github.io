@@ -8,25 +8,22 @@
         </ol>
 
         <ul>
-            <li>
-                <input type="checkbox" ng-model="passwords.options.uppercase">
-            </li>
-            <li>
-                <input type="checkbox" ng-model="passwords.options.lowercase">
-            </li>
-            <li>
-                <input type="checkbox" ng-model="passwords.options.digits">
-            </li>
-            <li>
-                <input type="checkbox" ng-model="passwords.options.specialcharacters">
-            </li>
-            <li>
-                <input type="checkbox" ng-model="passwords.options.brackets">
-            </li>
-            <li>
-                <input type="checkbox" ng-model="passwords.options.spaces">
+            <li ng-repeat="(key, value) in passwords.options">
+                <label ng-switch="passwords.getTypeOf(value)">
+                    <span ng-switch-when="boolean">
+                        <input type="checkbox" ng-model="passwords.options[key]">
+                    </span>
+                    <span ng-switch-when="number">
+                        <input type="number" ng-model="passwords.options[key]">
+                    </span>
+                    <span ng-switch-default>
+                        <input type="text" ng-model="passwords.options[key]">
+                    </span>
+                    {{ key }} {{ value }}
+                </label>
             </li>
         </ul>
+
     </body>
     <script src="PasswordGenerator.js"></script>
 
@@ -39,6 +36,10 @@
 
                 var passwords = this;
                 passwords.passwordList = [];
+
+                passwords.getTypeOf = function(value) {
+                    return typeof(value);
+                };
 
                 passwords.options = {
                     length: 20,
