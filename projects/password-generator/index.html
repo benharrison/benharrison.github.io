@@ -1,6 +1,11 @@
 <!doctype html>
 <html ng-app="passwordGeneratorGui">
     <head>
+        <style type="text/css">
+            body {
+                font-family: monospace;
+            }
+        </style>
     </head>
     <body ng-controller="PasswordGeneratorGuiController as ctrl">
         <ol>
@@ -19,7 +24,7 @@
                     <span ng-switch-default>
                         <input type="text" ng-model="ctrl.options[key]">
                     </span>
-                    {{ key }} {{ value }}
+                    {{ key }}
                 </label>
             </li>
         </ul>
