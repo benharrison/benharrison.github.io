@@ -1,22 +1,33 @@
 <!doctype html>
-<html ng-app="passwordGenerator">
-	<head>
-	</head>
-	<body ng-controller="PasswordGeneratorController as passwords">
-		<ul>
-			<li ng-repeat="password in passwords.passwordList">{{password}}</li>
-		</ul>
-	</body>
+<html ng-app="passwordGeneratorGui">
+    <head>
+    </head>
+    <body ng-controller="PasswordGeneratorGuiController as passwords">
+        <ol>
+            <li ng-repeat="password in passwords.passwordList">{{password}}</li>
+        </ol>
+    </body>
     <script src="PasswordGenerator.js"></script>
 
     <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
     <script>
-    	angular.module('passwordGenerator', [])
-    		.controller('PasswordGeneratorController', function(){
-				var passwords = this;
+        angular.module('passwordGeneratorGui', [])
+            .controller('PasswordGeneratorGuiController', function($scope, $interval){
+                var listSize = 10;
+                var intervalSeconds = 1;
 
-				passwords.passwordList = new Array();
-				passwords.passwordList.push('abc123');
-    		})
+                var passwords = this;
+                passwords.passwordList = [];
+
+                var generatePassword = function() {
+                    var password = PasswordGenerator.Generate();
+                    passwords.passwordList.unshift(password);
+                    passwords.passwordList.splice(listSize, 1);
+                }
+
+                for (var i = 0; i < listSize; i++)
+                    generatePassword();
+                $interval(generatePassword, intervalSeconds * 1000);
+            })
     </script>
 </html>
