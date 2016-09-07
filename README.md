@@ -2,8 +2,8 @@
 
 ##Setup
 
-npm install --global gulp-cli
-npm install
+    npm install --global gulp-cli
+    npm install
 
 ###Change Log
 
