@@ -1,8 +1,9 @@
 var gulp = require('gulp'),
     connect = require('gulp-connect'),
-    csslint = require('gulp-csslint');
+    csslint = require('gulp-csslint'),
+    htmlv = require('gulp-html-validator');
 
-gulp.task('webserver', function() {
+gulp.task('serve', function() {
     connect.server();
 });
 
@@ -12,4 +13,4 @@ gulp.task('css', function() {
         .pipe(csslint.formatter());
 });
 
-gulp.task('default', ['webserver']);
+gulp.task('default', ['serve']);
