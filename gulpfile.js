@@ -1,7 +1,9 @@
 var gulp = require('gulp'),
     connect = require('gulp-connect'),
     csslint = require('gulp-csslint'),
-    htmlv = require('gulp-html-validator');
+    htmlhint = require("gulp-htmlhint");
+ 
+gulp.task('default', ['serve']);
 
 gulp.task('serve', function() {
     connect.server();
@@ -10,7 +12,17 @@ gulp.task('serve', function() {
 gulp.task('css', function() {
     gulp.src('assets/css/*.css')
         .pipe(csslint())
-        .pipe(csslint.formatter());
+        .pipe(csslint.formatter())
+        ;
 });
 
-gulp.task('default', ['serve']);
+gulp.task('html', function () {
+    gulp.src([
+            '*.html',
+            '*/*.html',
+            '!google*.html'
+            ])
+        .pipe(htmlhint())
+        .pipe(htmlhint.reporter())
+        ;
+});
