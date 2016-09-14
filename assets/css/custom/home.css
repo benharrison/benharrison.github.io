@@ -2,15 +2,6 @@ body {
     color:#999;
 }
 
-::selection {
-  background: #fcd211; /* WebKit/Blink Browsers */
-  color:#444;
-}
-::-moz-selection {
-  background: #fcd211; /* Gecko Browsers */
-  color:#444;
-}
-
 #home-wrapper {
     position:absolute;
     bottom:0;
