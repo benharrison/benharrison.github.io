@@ -1,5 +1,7 @@
 body {
     color:#999;
+    margin:0;
+    padding:0;
 }
 
 #home-wrapper {

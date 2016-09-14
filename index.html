@@ -48,6 +48,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
     <script>
+        function setContentPosition() {
+            var el = document.getElementById('home-wrapper');
+            el.style.position = (window.innerHeight > el.offsetHeight) ? 'absolute' : 'inherit';
+        }
+        document.getElementsByTagName('body')[0].onresize=setContentPosition;
+        setContentPosition();
+
         Velocity(document.getElementById('home-wrapper'), { opacity: 1.0 }, 1500);
     </script>
 
