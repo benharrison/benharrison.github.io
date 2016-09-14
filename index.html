@@ -49,13 +49,10 @@
     <script src="assets/js/velocity-1.2.3.min.js"></script>
     <script>
         Velocity(document.getElementById('home-wrapper'), { opacity: 1.0 }, 1500);
+        
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-6320980-1','auto');ga('send','pageview')
     </script>
-
-    <script>
-        var _gaq=[['_setAccount','UA-6320980-1'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 </html>
