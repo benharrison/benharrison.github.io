@@ -34,7 +34,7 @@
                 <h5>User Interface &amp; Design Portfolio 2008-2014</h5>
             </header>
 
-            <img id="portfolio-map" src="../assets/images/portfolio/collage.jpg" alt="" usemap="#Map" />
+            <img id="portfolio-map" src="" alt="" usemap="#Map" />
             <map name="Map" id="Map">
                 <area alt="My Lifestyle" title="" href="#mylifestyle" shape="poly" coords="0,11,404,0,406,34,463,39,469,44,474,53,467,156,190,151,188,190,168,191,168,154,0,165" />
                 <area alt="Personal Trainer Scheduler" title="" href="#lffpts" shape="poly" coords="0,165,166,157,169,191,190,189,190,151,471,156,469,370,186,365,186,311,175,312,176,336,0,345" />
@@ -552,6 +552,7 @@
                     fillOpacity : 0.2,
                     stroke      : false
                 })
+                .attr('src', '../assets/images/portfolio/collage.jpg')
                 .load(function(){
                     $('img').each(function(index, obj) {
                         var src = $(obj).data('src');
@@ -572,7 +573,9 @@
 
             swfobject.embedSWF("preloader.swf", "plusgame", "490", "500", "9.0.0");
         });
+    </script>
 
+    <script>
         window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
         ga('create','UA-6320980-1','auto');ga('send','pageview')
     </script>
