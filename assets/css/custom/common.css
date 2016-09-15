@@ -36,6 +36,22 @@
     font-style: italic;
 }
 
+/* utilities
+=================================================================================================*/
+
+/* http://stackoverflow.com/questions/273964/how-to-change-background-color-on-text-links-on-hover-but-not-image-links */
+a img{ vertical-align:text-bottom; }
+
+/* http://paulirish.com/2012/box-sizing-border-box-ftw */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* https://css-tricks.com/snippets/css/clear-fix/ (August 2012 version) */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
     font-family:"Proxima Nova", Helvetica, Arial, Sans-Serif;
     font-size:14px;
@@ -63,19 +79,28 @@ ul {
     margin-bottom:10px;
 }
 
-/* utilities
+/* slim-header
 =================================================================================================*/
 
-/* http://stackoverflow.com/questions/273964/how-to-change-background-color-on-text-links-on-hover-but-not-image-links */
-a img{ vertical-align:text-bottom; }
-
-/* http://paulirish.com/2012/box-sizing-border-box-ftw */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-/* https://css-tricks.com/snippets/css/clear-fix/ (August 2012 version) */
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
+header#slim-header {
+    background-color:#444;
+    color:#fff;
+    padding:0 0.25em;
 }
 
+header#slim-header>div {
+
+}
+
+header#slim-header h2 {
+}
+
+header#slim-header h2 a {
+    color:#aaa;
+    text-decoration:none;
+}
+
+header#slim-header h2 a:hover {
+    color:#fff;
+    text-decoration:none;
+}
