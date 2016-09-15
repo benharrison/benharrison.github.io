@@ -93,6 +93,7 @@ header#slim-header>div {
 }
 
 header#slim-header h2 {
+    margin:0;
 }
 
 header#slim-header h2 a {
