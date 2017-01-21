@@ -84,13 +84,17 @@ footer
 
 #portfolio
 {
-    width:1200px;
+    max-width:1200px;
     margin:1em auto;
+}
+
+img#portfolio-map {
+    max-width:100%;
 }
 
 .portfolio-modal
 {
-    width:900px;
+    max-width:900px;
     color: #fff;
     margin:15px 0;
 }
@@ -100,12 +104,10 @@ footer
         margin-left: 0;
     }
 
-    .portfolio-modal img
-        {
+    .portfolio-modal img {
         max-width:100%;
     }
 
-#portfolio area
-{
+#portfolio area {
     background-color:yellow;
 }

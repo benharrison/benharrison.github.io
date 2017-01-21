@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ben Harrison - User Interface &amp; Front End Development Portfolio 2008-2014</title>
+    <title>Ben Harrison - User Interface &amp; Front End Development Portfolio</title>
 
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="User Interface &amp; Front End Development Portfolio 2008-2014" />
+    <meta name="description" content="User Interface &amp; Front End Development Portfolio" />
     <meta name="author" content="Ben Harrison" />
     <meta name="copyright" content="Copyright 2008-2015" />
 
@@ -31,13 +31,14 @@
                     <a href="/">Ben Harrison</a>
                 </h1>
 
-                <nav>
+                <h5>User Interface &amp; Front End Development Portfolio 2008-2014</h5>
+                <!-- <nav>
                     <ul>
                         <li><a href="./portfolio"></i>Portfolio</a></li>
-                        <li><a href="https://medium.com/@benharrisoncc"></i>Articles</a></li>
                         <li><a href="https://stackoverflow.com/cv/benharrison"></i>Resume</a></li>
                         <li><a href="https://dribbble.com/benharrison"></i>Dribbble</a></li>
                         <li><a href="https://github.com/benharrison"></i>Github</a></li>
+                        <li><a href="https://medium.com/@benharrisoncc"></i>Articles</a></li>
                     </ul>
 
                     <ul id="contact">
@@ -46,10 +47,11 @@
                         <li><a href="tel:1-276-469-2027">
                             (276) 469-2027</a></li>
                     </ul>
-                </nav>
+                </nav> -->
             </header>
 
             <img id="portfolio-map" alt="" usemap="#Map" />
+
             <map name="Map" id="Map">
                 <area alt="My Lifestyle" title="" href="#mylifestyle" shape="poly" coords="0,11,404,0,406,34,463,39,469,44,474,53,467,156,190,151,188,190,168,191,168,154,0,165" />
                 <area alt="Personal Trainer Scheduler" title="" href="#lffpts" shape="poly" coords="0,165,166,157,169,191,190,189,190,151,471,156,469,370,186,365,186,311,175,312,176,336,0,345" />
@@ -556,16 +558,17 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
     <script src="../assets/js/libs/jquery.maphilight.min.js"></script>
+    <script src="../assets/js/libs/jquery.rwdImageMaps.min.js"></script>
 
     <script>
         $(document).ready(function(){
 
             $('#portfolio-map')
-                .maphilight({
-                    fillColor   : 'ff0000',
-                    fillOpacity : 0.2,
-                    stroke      : false
-                })
+                // .maphilight({
+                //     fillColor   : 'ff0000',
+                //     fillOpacity : 0.2,
+                //     stroke      : false
+                // })
                 .attr('src', '../assets/images/portfolio/collage.jpg')
                 .load(function(){
                     $('img').each(function(index, obj) {
@@ -573,6 +576,8 @@
                         if (src) { $(obj).attr('src', src); }
                     });
                 })
+                .rwdImageMaps()
+                ;
 
             $('#portfolio area').fancybox({
                 'closeBtn' : true,
