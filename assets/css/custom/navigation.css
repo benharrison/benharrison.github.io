@@ -1,0 +1,27 @@
+nav {
+
+}
+
+nav ul {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    margin-right:1em;
+}
+
+nav ul li a {
+    color:rgba(255,255,255,0.5);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

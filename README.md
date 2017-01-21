@@ -5,6 +5,10 @@
     npm install --global gulp-cli
     npm install
 
+##Run
+
+    python -m http.server
+
 ###Change Log
 
 **09-01-2016**
