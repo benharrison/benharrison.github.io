@@ -1,11 +1,47 @@
 body {
     font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
 }
 
 h1, h2, h3, h4 {
     font-family: 'Roboto Slab', serif;
+    color: #7425ff;
 }
 
 img {
     width: 100%;
+}
+
+section
+{
+    background-image: 
+        linear-gradient(-5deg, 
+        #fff,
+        #fff 25%, 
+        #f5f7f9 25%,
+        #f5f7f9 75%,
+        #fff 75%
+        );
+
+    padding: 5em 0;
+}
+
+section img
+{
+    -webkit-box-shadow: 0 28px 45px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 28px 45px rgba(0,0,0,.2);
+    box-shadow: 0 28px 45px rgba(0,0,0,.2);
+}
+
+/* logos
+------------------------------------------------------------*/
+
+.logo {
+
+}
+
+.logo.dotnet-core {
+    background-image:url('../img/logos/dotnet-core.png');
+    width: 270px;
+    height: 270px;
 }
