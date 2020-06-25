@@ -24,8 +24,8 @@ header {
     background-image: 
         linear-gradient(-3deg, 
         #f5f7f9,
-        #f5f7f9 19.8%, 
-        #7425ff 20%,
+        #f5f7f9 20.8%, 
+        #7425ff 21%,
         #5d1eff
     );
 
@@ -40,6 +40,20 @@ header h2 {
     color: #fff;
 }
 
+header a {
+    position: absolute;
+    top: 1em;
+    color: #fff;
+    font-size: 0.7em;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+header a:hover {
+    color:#fff;
+    text-decoration: none;
+    opacity: 1.0;
+}
 
 section
 {
@@ -133,6 +147,10 @@ footer
 .logo.nginx {
     background-image:url('../img/logos/nginx.png');
     width: 230px;
+}
+
+.logo.rabbitmq {
+    background-image:url('../img/logos/rabbitmq.png');
 }
 
 .logo.ubuntu {
