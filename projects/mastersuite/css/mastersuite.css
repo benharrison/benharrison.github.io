@@ -3,9 +3,13 @@ body {
     font-size: 1.5em;
 }
 
-h1, h2, h3, h4 {
+h1, h2 {
     font-family: 'Roboto Slab', serif;
     color: #7425ff;
+}
+
+h1 {
+    font-size: 4em;
 }
 
 h2 {
@@ -16,10 +20,31 @@ img {
     width: 100%;
 }
 
+header {
+    background-image: 
+        linear-gradient(-3deg, 
+        #fff,
+        #fff 19.8%, 
+        #7425ff 20%,
+        #5d1eff
+    );
+
+    color: #fff;
+    padding: 4em 0 6em;
+
+    text-shadow: 0px 3px 6px rgba(0,0,0, 0.25);
+}
+
+header h1,
+header h2 {
+    color: #fff;
+}
+
+
 section
 {
     background-image: 
-        linear-gradient(-5deg, 
+        linear-gradient(-3deg, 
         #fff,
         #fff 25%, 
         #f5f7f9 25%,
