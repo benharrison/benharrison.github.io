@@ -47,12 +47,3 @@ ul li a i {
     width:1.3em;
 }
 
-::selection {
-    background: #fcd211; /* WebKit/Blink Browsers */
-    color:#444;
-}
-::-moz-selection {
-    background: #fcd211; /* Gecko Browsers */
-    color:#444;
-}
- 
