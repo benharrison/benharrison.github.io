@@ -12,10 +12,6 @@ h1 {
     font-size: 3em;
 }
 
-h2 {
-    /* margin-bottom: 2em; */
-}
-
 img {
     width: 100%;
 }
@@ -177,3 +173,16 @@ footer p
     background-image:url('../img/logos/vagrant.png');
     width: 190px;
 }
+
+
+/* responsive
+------------------------------------------------------------*/
+
+@media only screen and (max-width: 992px) {
+
+    .section-description
+    {
+        padding-top: 0;
+    }
+
+  }
