@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 
 img {
@@ -94,6 +94,17 @@ section#admin-panel
 footer
 {
     padding: 6em 0;
+}
+
+footer p
+{
+    margin-top: 2em;
+    font-size: 0.6em;
+}
+
+.padded-container
+{
+    padding: 4em 0;
 }
 
 /* logos
