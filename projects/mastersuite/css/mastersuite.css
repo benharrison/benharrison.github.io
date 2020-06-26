@@ -91,6 +91,11 @@ section#admin-panel
 
 }
 
+.section-description
+{
+    padding-top: 2em;
+}
+
 footer
 {
     padding: 6em 0;
