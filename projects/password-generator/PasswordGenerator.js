@@ -1,7 +1,7 @@
 window.PasswordGenerator = (function(){
     // private
     var _defaultOptions = {
-      length: 10,
+      length: 80,
       lowercase: true,
       uppercase: true,
       digits: true,
@@ -9,6 +9,10 @@ window.PasswordGenerator = (function(){
       spaces: false,
       brackets: false,
     };
+
+    var getDefaultOptions = function () {
+        return _defaultOptions;
+    }
 
     var _alpha              = 'abcdefghijklmnopqrstuvwxyz';
     var _lowerCase          = _alpha.split('');
@@ -83,6 +87,7 @@ window.PasswordGenerator = (function(){
 
     // public
     return {
+        GetDefaultOptions   : getDefaultOptions,
         Generate            : generate,
         CheckStrength       : checkStrength
     }

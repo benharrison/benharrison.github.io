@@ -36,18 +36,9 @@
                     return type;
                 };
 
-                ctrl.options = {
-                    length: 80,
-                    uppercase: true,
-                    lowercase: true,
-                    digits: true,
-                    specialcharacters: true,
-                    brackets: true,
-                    spaces: false
-                };
+                ctrl.options = PasswordGenerator.GetDefaultOptions();
 
                 ctrl.generatePassword = function() {
-                    $log.log(ctrl.options);
                     ctrl.generatedPassword = PasswordGenerator.Generate(ctrl.options);
                 }
 
