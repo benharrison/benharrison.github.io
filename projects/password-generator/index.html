@@ -1,16 +1,42 @@
 <!doctype html>
 <html ng-app="passwordGeneratorGui">
     <head>
+        <title>Ben Harrison - Password Generator</title>
+
+        <link rel="shortcut icon" href="/favicon.png" />
+    
         <style type="text/css">
             body {
                 font-family: monospace;
             }
+
+            header {
+                text-align: center;
+                margin-top:10em;
+            }
+
+            header span {
+                border: 0.15em solid #000;
+                padding: 2em;
+                font-size: 1.25em;
+            }
+
+            ul {
+                width: 20em;
+                margin: 6em auto 0;
+
+                list-style-image:none;
+                list-style-position:outside;
+                list-style-type:none;
+            }
         </style>
     </head>
     <body ng-controller="PasswordGeneratorGuiController as ctrl">
-        <div>
-            {{ctrl.generatedPassword}}
-        </div>
+        <header>
+            <span>
+                {{ctrl.generatedPassword}}
+            </span>
+        </header>
 
         <ul>
             <li ng-repeat="(key, value) in ctrl.options">
