@@ -8,24 +8,14 @@
         </style>
     </head>
     <body ng-controller="PasswordGeneratorGuiController as ctrl">
-        <ol>
-            <li ng-repeat="password in ctrl.passwordList">{{password}}</li>
-        </ol>
+        <div>
+            {{ctrl.generatedPassword}}
+        </div>
 
         <ul>
             <li ng-repeat="(key, value) in ctrl.options">
-                <label ng-switch="ctrl.getTypeOf(value)">
-                    <span ng-switch-when="boolean">
-                        <input type="checkbox" ng-model="ctrl.options[key]">
-                    </span>
-                    <span ng-switch-when="number">
-                        <input type="number" ng-model="ctrl.options[key]">
-                    </span>
-                    <span ng-switch-default>
-                        <input type="text" ng-model="ctrl.options[key]">
-                    </span>
-                    {{ key }}
-                </label>
+                <input type="{{ ctrl.getTypeOf(value) }}" ng-model="ctrl.options[key]" ng-change="ctrl.generatePassword()">
+                {{ key }}
             </li>
         </ul>
 
@@ -35,20 +25,20 @@
     <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
     <script>
         angular.module('passwordGeneratorGui', [])
-            .controller('PasswordGeneratorGuiController', function($scope, $interval, $log){
-                var listSize = 10;
-                var intervalSeconds = 1;
-
+            .controller('PasswordGeneratorGuiController', function($scope, $log){
                 var ctrl = this;
-                ctrl.passwordList = [];
+                ctrl.generatedPassword = '';
 
                 ctrl.getTypeOf = function(value) {
-                    return typeof(value);
+                    var type = typeof(value);
+                    if (type == 'boolean')
+                        return 'checkbox';
+                    return type;
                 };
 
                 ctrl.options = {
-                    length: 20,
-                    uppercase: false,
+                    length: 80,
+                    uppercase: true,
                     lowercase: true,
                     digits: true,
                     specialcharacters: true,
@@ -56,16 +46,12 @@
                     spaces: false
                 };
 
-                var generatePassword = function() {
+                ctrl.generatePassword = function() {
                     $log.log(ctrl.options);
-                    var password = PasswordGenerator.Generate(ctrl.options);
-                    ctrl.passwordList.unshift(password);
-                    ctrl.passwordList.splice(listSize, 1);
+                    ctrl.generatedPassword = PasswordGenerator.Generate(ctrl.options);
                 }
 
-                for (var i = 0; i < listSize; i++)
-                    generatePassword();
-                $interval(generatePassword, intervalSeconds * 1000);
+                ctrl.generatePassword();
             })
     </script>
 </html>
