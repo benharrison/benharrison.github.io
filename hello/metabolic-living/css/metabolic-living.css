@@ -1,3 +1,69 @@
+body {
+    font-family: 'Poppins', Sans-Serif;
+}
+
+a {
+    color: #82bc5e;
+    font-weight: bold;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+    color: #518620;
+}
+
+h1, h2 {
+    font-family: 'Abril Fatface', Serif;
+    margin-top:2em;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: rgba(0,0,0,0.9);
+    color: #fff;
+    padding: 4em 0;
+}
+
+header a {
+    padding: 0 0.2em;
+    margin: 0 -0.2em;
+
+    border: 0.15em dotted transparent;
+
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    border-radius: 0.2em;
+}
+
+header a:hover,
+header a:active {
+    text-decoration: none;
+    border-color: #82bc5e;
+    color: #82bc5e;
+}
+
 summary {
+    padding: 4em 0;
+    background-color: rgba(0,0,0,0.05);
     cursor: auto;
+}
+
+#logos {
+    text-align: center;
+}
+
+#logos img {
+    max-height: 4em;
+    filter: grayscale(100%);
+    margin: 2em;
+    margin-bottom: 0;
+    opacity: 0.7;
 }
