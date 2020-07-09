@@ -96,3 +96,43 @@ summary {
     margin: 3em 1.5em 0;
     opacity: 0.7;
 }
+
+.external-link {
+    display: inline-block;
+    padding: 1em 2em;
+    border: 0.2em solid transparent;
+    border-radius: 0.2em;
+}
+
+.external-link:hover,
+.external-link:active {
+    text-decoration: none;
+}
+
+.external-link#linkedin {
+    color: #0077b5;
+}
+
+.external-link#linkedin:hover,
+.external-link#linkedin:active {
+    border-color: #0077b5;
+}
+
+.external-link#dribbble {
+    color: #ea4c89;
+}
+
+.external-link#dribbble:hover,
+.external-link#dribbble:active {
+    border-color: #ea4c89;
+}
+
+.external-link#github {
+    color: #000;
+}
+
+.external-link#github:hover,
+.external-link#github:active {
+    border-color: #000;
+}
+
