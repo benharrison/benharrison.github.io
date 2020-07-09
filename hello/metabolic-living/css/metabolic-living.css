@@ -136,3 +136,11 @@ summary {
     border-color: #000;
 }
 
+.external-link#stackoverflow {
+    color: #f48024;
+}
+
+.external-link#stackoverflow:hover,
+.external-link#stackoverflow:active {
+    border-color: #f48024;
+}
