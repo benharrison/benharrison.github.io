@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+    <head>
+        <title>RAP: REST APIs &amp; PHP</title>
+        <link href="/assets/images/favicon.png" rel="shortcut icon" />
+
+        <link href="https://fonts.googleapis.com/css?family=Oswald:200|Playfair+Display:900i" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h2 id="logo"></h2>
+            <h3 id="logo-subtitle"><em>REST APIs</em> &amp; <em>PHP</em></h3>
+
+            <div id="overview">
+                The <strong>RAP stack</strong> is an architectural pattern that utilizes <strong>REST APIs</strong> for sophisticated back-end functionality, while making their functionality easy to use through a thin-client <strong>PHP</strong> interface.
+                An alternative to LAMP, this approach greatly reduces the amount of code in a PHP application, while empowering Web Designers & Software Engineers to focus on their respective strengths.
+            </div>
+
+        </header>
+
+        <main>
+
+            <h1>OK great, but PHP? Seriously?</h1>
+
+            <p>
+                In many ways PHP's bad reputation is unfair,
+                because it has been the <a href="https://medium.com/@raydollete/php-gets-a-bad-rap-3ab6fce06c4a">language of choice for lots of poorly written projects</a>.
+                In many of those cases, the creators were to blame more than the tool.
+                Like nearly every other technology PHP has a purpose and serves a specific niche as the right tool for the job.
+            </p>
+
+            <p>
+                The RAP stack is largely a counter-response to the ever-changing web development landscape.
+                New tools and frameworks are constantly being released, with each making lofty claims that they'll help teams build software better, faster, and more reliably than before.
+                While occassionally this is true, often it isn't. In the worst case scenarios new technologies can become counterproductive nightmares;
+                    decreasing team velocity, adding unnecessary restrictions, binding a project to vendor-lockin, 
+                    creating dependencies that are difficult to upgrade, 
+                    or simply requiring a paradigm-shift in thinking to produce similar results.
+            </p>
+
+            <p>
+                This stack provides fundamentally skilled developers a flexible pattern to build quality software systems 
+                with the propensity to choose proven technologies.
+            </p>
+
+            <div class="quote">
+                    <q>Over the years, my routine might have changed some but my philosophy never did.
+                        If something has worked for other greats before, and if something is working for you, why change it up and embrace some new fad?
+                        Stick with what works, even if it's unpopular.</q>
+                    <p>
+                        - Kobe Bryant, <em>The Mamba Mentality: How I Play</em>
+                    </p>
+                </div>
+    
+            <h1>3-Tier Approach</h1>
+
+            <p>
+                <table class="diagram">
+                    <tr>
+                        <td class="diagram-label">
+                            Presentation Layer
+                        </td>
+                        <td class="diagram-content">
+                            <p><strong>PHP THIN-CLIENT</strong></p>
+                            <ul>
+                                <li>Interacts with REST API for all input/output</li>
+                                <li>Contains no business logic or direct database connectivity</li>
+                                <li>Built by Designers, Usability Experts, &amp; Front-end Developers who have a mastery in hand-crafting quality, maintainable, HTML/CSS</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="diagram-label">
+                            Application Layer / Business Logic
+                        </td>
+                        <td class="diagram-content">
+                            <p><strong>REST API</strong></p>
+
+                            <ul>
+                                <li>Contains all business logic</li>
+                                <li>Responsible for database connectivity</li>
+                                <li>Testable and verifiable with or without the need of a UI</li>
+                                <li>Built by Engineers with a mastery of Software Development principles</li>
+                            </ul>
+
+                            Can be built using the tools of your team's preference:
+                            <ul>
+                                <li>C# & WebApi</li>
+                                <li>Python & Flask</li>
+                                <li>Java & Spring</li>
+                                <li>etc</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="diagram-label">
+                            Database Layer
+                        </td>
+                        <td class="diagram-content">
+                            <p><strong>PERSISTENT STORAGE</strong></p>
+
+                            <p>
+                                PHP presentation-layer has no knowledge of the underlying database(s) since all communication goes through the REST APIs.
+                            </p>
+
+                            Can be built using the tools of your team's preference:
+                            <ul>
+                                <li>PostgreSQL</li>
+                                <li>MariaDB / MySQL</li>
+                                <li>Mongo</li>
+                                <li>Cassandra</li>
+                                <li>etc</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </p>
+
+            <h1>Philosophies, Principles, &amp; Motivations</h1>
+
+            <ul>
+                <li>The user-interface is not <em>the application</em>, but rather a small module within a larger system.</li>
+                <li>Systems can (and in many cases should) have more than one interface. For example: mobile, admin panel, tech support, heads up display, and a test harness to name a few.</li>
+                <li>The user-interface should be more of a Web Design Project rather than a Software Engineering Project.</li>
+                <li>Less is more when it comes to business logic existing in presentation layers.</li>
+                <li>PHP still has a purpose, and there are lots of talented web designers ready and able to contribute.</li>
+                <li>Newer isn't always better. Just because the eleventy-billionth Javascript framework that was just released claims to help you build apps faster, easier, and more reliably doesn't necessarily mean it will work as well as it sounds.</li>
+                <li>Artists who learn to code are always better designers than Programmers who learn to design.</li>
+                <li>The end product is infinitely more important than the tools used to build it.</li>
+            </ul>
+
+            <h1>Problems This Pattern Attempts to Avoid</h1>
+
+            <ul>
+                <li>Open-source vendor lock-in</li>
+                <li>Deceptively easy one-line terminal commands that start a project quickly, but add bloat, unwanted dependencies and restrictions</li>
+            </ul>
+
+        </main>
+
+        <div class="clearfix"></div>
+
+    </body>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130031233-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130031233-1');
+    </script>
+</html>
+
+<!--
+Not exactly a new technology stack. More of an ideology that combines various proven technologies.
+    Your UI is not your application
+    Newer isn't always better
+Less is more
+Clean separation between REST API Software Engineers & Web Designers
+    UI is a thin-client piece of a much larger system
+Not arrogant enough to say that we're the fastest/best/easiest. Lots of good frameworks exist, and want to co-exist. More a proponent of proven tools and techniques over.
+
+Improved Separation of Concerns between design & development
+- Simpler UI empowers web designers to make valuable contributions
+- Software Engineers can focus on the hard stuff that really matters
+
+https://medium.com/@raydollete/php-gets-a-bad-rap-3ab6fce06c4a - Poor carpenter blames the tools
+
+what we're against:
+- deceptively easy one-line command that does way too much, requires a paradigm shift in thinking, and developing an expertise in a proprietary tool
+- open-source vendor lock-in
+-->

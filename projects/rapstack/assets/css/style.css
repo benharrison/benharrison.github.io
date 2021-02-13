@@ -1,0 +1,133 @@
+/*
+red - ff002f
+orange - fbaf5d
+*/
+
+/* Base HTML elements
+-------------------------------------------------------------------------------------*/
+
+body {
+    background-color: #e7e7e7;
+    color: #444;
+}
+
+a, a:visited {
+    color: #ff002f;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 1em;
+    color: #ff002f;
+}
+
+strong {
+    color: #111;
+}
+
+/* CSS classes
+-------------------------------------------------------------------------------------*/
+
+.quote {
+    max-width: 600px;
+    margin: 60px auto;
+}
+
+.quote q {
+    font-size: 1.25em;
+    font-family: 'Playfair Display', serif;
+}
+
+.quote p {
+    text-align: right;
+}
+
+
+/* Header
+-------------------------------------------------------------------------------------*/
+
+header {
+    padding: 100px 0;
+
+    background-image:url('/assets/images/background.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header #overview {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    padding: 40px;
+    background-color: rgba(0,0,0,0.5);
+    color: #bbb;
+}
+
+header #overview strong {
+    color: #fff;
+}
+
+#logo {
+    background-image:url('/assets/images/logo.png');
+    width: 356px;
+    height: 175px;
+    margin: 0 auto;
+}
+
+#logo-subtitle {
+    color: #e7e7e7;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+#logo-subtitle em {
+    font-style: normal;
+}
+
+/* Content
+-------------------------------------------------------------------------------------*/
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+/* Diagram Table
+-------------------------------------------------------------------------------------*/
+
+table.diagram {
+    width: 100%;
+}
+
+table.diagram tr {
+    border-bottom: 4px solid #e7e7e7;
+}
+
+table.diagram td {
+    padding: 20px;
+    vertical-align: text-top;
+}
+
+table.diagram .diagram-label {
+    width: 35%;
+    background-color: #fff;
+}
+
+table.diagram .diagram-content {
+    width: 65%;
+    background-color: #444;
+    color: #e7e7e7;
+}
+
+table.diagram .diagram-content strong {
+    color: #fff;
+}
