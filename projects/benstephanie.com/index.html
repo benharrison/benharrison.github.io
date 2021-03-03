@@ -28,7 +28,7 @@
 <body>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220.14 75.6">
-        <g id="Layer_1" data-name="Layer 1">
+        <g id="bs777">
             <path class="cls-1"
                 d="M198.49,189.57l46.26.28v75.32l-46.26-.29Zm30.85,36.28a5.08,5.08,0,0,0,2.74-.93,10.11,10.11,0,0,0,2.63-2.6,14.54,14.54,0,0,0,1.94-4,16.25,16.25,0,0,0,.76-5.13,13,13,0,0,0-.94-5,11.17,11.17,0,0,0-2.81-4.05,13.28,13.28,0,0,0-4.82-2.74,21.46,21.46,0,0,0-6.91-1H209.54v53.64H227a15,15,0,0,0,6.18-1.19,12.41,12.41,0,0,0,4.42-3.24,14,14,0,0,0,2.65-4.72,17.36,17.36,0,0,0,.9-5.61,16.44,16.44,0,0,0-.65-4.39,14,14,0,0,0-2.05-4.4,11.54,11.54,0,0,0-3.63-3.34A10.52,10.52,0,0,0,229.34,225.85Z"
                 transform="translate(-198.49 -189.57)" />
@@ -51,16 +51,21 @@
 
     <script>
         function getRandomHex() {
-            var hexValue = Math.floor(Math.random() * 256).toString(16);
-            if (hexValue.length == 1)
-                hexValue = '0'+hexValue;
-            return hexValue;
+            var hexValue = Math.floor(Math.random() * 255).toString(16);
+            return (hexValue.length == 1 ? '0' : '') + hexValue;
         }
-        var r,g,b;
-        r=getRandomHex();
-        g=getRandomHex();
-        b=getRandomHex();
-        Layer_1.style.fill='#'+r+g+b;
+
+        function setColor() {
+            var r=getRandomHex();
+            var g=getRandomHex();
+            var b=getRandomHex();
+            bs777.style.fill='#'+r+g+b;
+
+            setTimeout(setColor, 667);
+        }
+
+        setColor();
+
     </script>
 
 </body>
